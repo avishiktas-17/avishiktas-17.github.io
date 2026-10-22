@@ -1,78 +1,123 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Avishikta</title>
-
-  <style>
-
-    body{
-      margin:0;
-      font-family:sans-serif;
-      background:black;
-      color:white;
-      text-align:center;
-    }
-
-    section{
-      min-height:100vh;
-      display:flex;
-      flex-direction:column;
-      justify-content:center;
-      align-items:center;
-      padding:20px;
-    }
-
-    h1{
-      font-size:60px;
-    }
-
-    p{
-      color:gray;
-      max-width:600px;
-      line-height:1.6;
-    }
-
-    .btns{
-      margin-top:20px;
-    }
-
-    a{
-      text-decoration:none;
-      color:white;
-      border:1px solid white;
-      padding:12px 24px;
-      border-radius:30px;
-      margin:10px;
-      transition:0.3s;
-    }
-
-    a:hover{
-      background:white;
-      color:black;
-    }
-
-  </style>
-
+  <meta name="description" content="Avishikta Sengupta — software developer portfolio showcasing web development and AI projects.">
+  <title>Avishikta Sengupta | Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
+  <header class="navbar">
+    <a class="logo" href="#home">ASG<span>.</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#projects">Explore work ↗</a>
+  </header>
 
-  <section>
+  <main>
+    <section class="hero" id="home">
+      <p class="eyebrow">CSBS ENGINEERING STUDENT · DEVELOPER</p>
+      <h1>Building software<br>that <span>solves problems.</span></h1>
+      <p class="intro">
+        I'm Avishikta, a software developer interested in full-stack
+        applications, AI-powered systems, and thoughtful digital experiences.
+      </p>
+      <div class="actions">
+        <a class="button primary" href="#projects">View my projects ↗</a>
+        <a class="button secondary"
+           href="https://github.com/avishiktas-17"
+           target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      </div>
+      <div class="terminal">
+        <p><span>avishikta@portfolio</span>:~$ whoami</p>
+        <p>developer · problem solver · lifelong learner</p>
+        <p><span>avishikta@portfolio</span>:~$ status</p>
+        <p class="accent">Building, learning, and shipping projects_</p>
+      </div>
+    </section>
 
-    <h1>Hi, I'm Avishikta 👋</h1>
+    <section class="section" id="about">
+      <p class="eyebrow">01 / ABOUT</p>
+      <h2>A little about me.</h2>
+      <p>
+        I'm pursuing a B.Tech in Computer Science and Business Systems.
+        I enjoy developing web applications, exploring machine learning,
+        and turning ideas into working software.
+      </p>
+    </section>
 
-    <p>
-      Full Stack & AI Enthusiast building creative digital experiences.
-    </p>
+    <section class="section" id="skills">
+      <p class="eyebrow">02 / TOOLKIT</p>
+      <h2>Technologies I work with.</h2>
+      <div class="skills">
+        <span>Java</span><span>Python</span><span>C++</span>
+        <span>JavaScript</span><span>HTML & CSS</span>
+        <span>React</span><span>Next.js</span><span>Node.js</span>
+        <span>FastAPI</span><span>SQL</span><span>Git & GitHub</span>
+      </div>
+    </section>
 
-    <div class="btns">
-      <a href="https://github.com/">GitHub</a>
-      <a href="https://linkedin.com/">LinkedIn</a>
-    </div>
+    <section class="section" id="projects">
+      <p class="eyebrow">03 / SELECTED WORK</p>
+      <h2>Projects I've been building.</h2>
+      <div class="project-grid">
+        <article class="project">
+          <p class="project-number">PROJECT_01</p>
+          <h3>Ember & Bean</h3>
+          <p>A café website template built with Next.js, TypeScript,
+             and Tailwind CSS.</p>
+          <p class="tags">Next.js · TypeScript · Tailwind</p>
+          <a href="https://github.com/avishiktas-17"
+             target="_blank" rel="noopener noreferrer">Explore code ↗</a>
+        </article>
+        <article class="project">
+          <p class="project-number">PROJECT_02</p>
+          <h3>AI Meeting Analyzer</h3>
+          <p>A pipeline for speech transcription, speaker diarization,
+             and meeting summarization.</p>
+          <p class="tags">Python · ASR · AI/ML</p>
+          <a href="https://github.com/avishiktas-17"
+             target="_blank" rel="noopener noreferrer">Explore code ↗</a>
+        </article>
+        <article class="project">
+          <p class="project-number">PROJECT_03</p>
+          <h3>WeatherGPT</h3>
+          <p>A weather API with current conditions and forecast endpoints.</p>
+          <p class="tags">Python · FastAPI · SQLite</p>
+          <a href="https://github.com/avishiktas-17"
+             target="_blank" rel="noopener noreferrer">Explore code ↗</a>
+        </article>
+        <article class="project">
+          <p class="project-number">PROJECT_04</p>
+          <h3>Music App</h3>
+          <p>A responsive music-themed web experience.</p>
+          <p class="tags">HTML · CSS · JavaScript</p>
+          <a href="https://github.com/avishiktas-17"
+             target="_blank" rel="noopener noreferrer">Explore code ↗</a>
+        </article>
+      </div>
+    </section>
 
-  </section>
+    <section class="section contact" id="contact">
+      <p class="eyebrow">04 / CONTACT</p>
+      <h2>Have an interesting opportunity?</h2>
+      <p>I'm open to connecting about software engineering,
+         web development, and AI projects.</p>
+      <a class="button primary"
+         href="https://github.com/avishiktas-17">Connect on GitHub ↗</a>
+    </section>
+  </main>
 
+  <footer>
+    <p>© <span id="year"></span> Avishikta Sengupta</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
 </body>
 </html>
