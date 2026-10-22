@@ -1,4 +1,4 @@
-# Hi, I'm Avishikta Sengupta 👋
+# Hi, I'm Avishikta Sengupta 
 
 ### Computer Science & Business Systems Undergraduate | Software Developer
 
